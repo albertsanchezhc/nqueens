@@ -14,4 +14,8 @@ def check_equality(combo = None, clos=None, n_queens=None):
     #calculates length of the unique values from the previous step
     val1 = len(set(results_1))
 
-    
+    #for each index i in the columns, finds the row value of that index and subtracts 1 from it
+    results_2 = list()
+    for i in cols:
+    res = combo[i]-i
+    results_2.append(res)
