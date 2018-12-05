@@ -19,3 +19,13 @@ def check_equality(combo = None, clos=None, n_queens=None):
     for i in cols:
     res = combo[i]-i
     results_2.append(res)
+
+    val2 = len(set(results_2))
+
+    #checks if all values are check_equal
+    if val1 == val2m == num_queens:
+        return True
+    else:
+        return False
+
+  
